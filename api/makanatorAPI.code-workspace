@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "makanatorAPI",
+			"path": ".."
+		},
+		{
+			"name": "technofest",
+			"path": "../../../../technofest/technofest"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "makanatorAPI"
+	}
+}

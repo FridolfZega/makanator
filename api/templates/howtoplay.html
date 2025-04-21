@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bermain</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+
+    <style>
+        @font-face {
+            font-family: "Digitalt";
+            src: url("{% static 'Digitalt.otf' %}") format("opentype");
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("{% static 'bg.png' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: "Digitalt", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="main_title2">
+            <p>Cara Bermain</p>
+        </div>
+
+        <div class="content">
+            <p>Pikirkan 1 makanan tradisional Indonesia<br>
+               Jawab pertanyaan sesuai dengan pertanyaan tentang makanannya.
+            </p>
+        </div>
+
+        <div class="back">
+            <button onclick="location.href='/'" style="background:none; border:none; padding:0; cursor:pointer;">
+                <img src="{% static 'back.png' %}" alt="button" class="button_img_back">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

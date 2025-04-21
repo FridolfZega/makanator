@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+
+    <style>
+        @font-face {
+            font-family: "Digitalt";
+            src: url("{% static 'Digitalt.otf' %}") format("opentype");
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("{% static 'bg.png' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: "Digitalt", sans-serif;
+        }
+
+        .question_amount {
+            font-family: "Digitalt", sans-serif;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+            color: white;
+            opacity: 0.6;
+        }
+
+        .question {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .tag_with_text {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .tag_img {
+            width: 160px;
+        }
+
+        .tag_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+            font-family: "Digitalt", sans-serif;
+            font-size: 16px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .question p {
+            color: white;
+            font-size: 28px;
+            font-family: "Digitalt", sans-serif;
+            -webkit-text-stroke: 1px #098AEE;
+            text-shadow: 0px 4px #098AEE;
+            margin: 0;
+        }
+
+        .answer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .answer button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <p class="question_amount">#1</p>
+
+        <div class="question">
+            <div class="tag_with_text">
+                <img src="{% static 'tag.svg' %}" alt="tag" class="tag_img">
+                <span class="tag_text">PERTANYAAN</span>
+            </div>
+            <p>APAKAH MAKANAN INI<br>MEMILIKI RASA ASIN?</p>
+        </div>
+
+        <div class="answer">
+            <button>
+                <img src="{% static 'button-iya.svg' %}" alt="Iya" height="60">
+            </button>
+            <button>
+                <img src="{% static 'button-mungkin.svg' %}" alt="Mungkin" height="60">
+            </button>
+            <button>
+                <img src="{% static 'button-tidak.svg' %}" alt="Tidak" height="60">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
