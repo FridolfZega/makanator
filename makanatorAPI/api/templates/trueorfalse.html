@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <div class="background">
+        <div class="paragraph_page4">
+            <p>
+                Makanan yang kamu pikirkan
+            </p>
+        </div>
+        <div class="tag">
+            <img src="{% static 'tag.svg' %}" alt="tag" width="400px" height="64px">
+        </div>
+        <div class="result">
+            <img src="{% static 'card_bg.svg' %}" alt="result" width="380px" height="380px"> 
+            <div class="answer_tof">
+                <button class="iya">
+                    <img src="{% static 'button-benar.svg' %}" alt="button" width="auto" height="60px">
+                </button>
+                <button class="salah">
+                    <img src="{% static 'button-salah.svg' %}" alt="button" width="auto" height="60px">
+                </button>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makanator</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+
+    <!-- Inline font & background fix -->
+    <style>
+        @font-face {
+            font-family: "Digitalt";
+            src: url("{% static 'Digitalt.otf' %}") format("opentype");
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("{% static 'bg.png' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: "Digitalt", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home"> 
+        <div class="background">
+            <div class="title">
+                <p class="main_title">
+                    <span class="letter1">M</span>
+                    <span class="letter2">a</span>
+                    <span class="letter3">k</span>
+                    <span class="letter4">a</span>
+                    <span class="letter5">n</span>
+                    <span class="letter6">a</span>
+                    <span class="letter7">t</span>
+                    <span class="letter8">o</span>
+                    <span class="letter9">r</span>
+                </p>
+            </div>
+
+            <div class="sub_title">
+                <p>AKU BISA TAHU KAMU LAGI PIKIRIN MAKANAN APA!</p>
+            </div>
+
+            <div class="button">
+                <a href="{% url 'play' %}">
+                    <img src="{% static 'mulai.png' %}" alt="Mulai" class="button_img1">
+                </a>
+                <a href="{% url 'howtoplay' %}">
+                    <img src="{% static 'cara bermain.png' %}" alt="Cara Bermain" class="button_img2">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

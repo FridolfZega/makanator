@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Tebakan</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <div class="background">
+        <div class="paragraph_page4">
+            <p>
+                Makanan yang kamu pikirkan
+            </p>
+        </div>
+        <div class="tag_result">
+            <img src="{% static 'tag.svg' %}" alt="tag" width="400px" height="64px">
+        </div>
+        <div class="result">
+            <img src="{% static 'card_bg.svg' %}" alt="result" width="380px" height="380px"> 
+        </div>
+        <div class="back">
+            <button>
+                <img src="{% static 'back.png' %}" alt="button" class="button_img_back">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
